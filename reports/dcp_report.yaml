@@ -49,6 +49,7 @@ Distinguished Club Program Report:
             status: 4 New Members needed
             target: "4"
         New members:
+<<<<<<< HEAD
             achieved: "2"
             status: 2 New Members needed
             target: "4"
@@ -56,6 +57,15 @@ Distinguished Club Program Report:
         Club officer roles trained June–August:
             achieved: "0"
             status: First Training Period 4 needed
+=======
+            achieved: "1"
+            status: 3 New Members needed
+            target: "4"
+    Training:
+        Club officer roles trained June–August:
+            achieved: "7"
+            status: First Training Period Achieved
+>>>>>>> b967722 (Auto commit: updated the club dcp report files)
             target: "4"
         Club officer roles trained November–February:
             achieved: "0"
