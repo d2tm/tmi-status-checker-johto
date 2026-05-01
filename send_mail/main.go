@@ -43,6 +43,7 @@ func generateMessageBody(club_number string, club_name string) string {
 		club_name = "Toastmasters Club"
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	is_corporate_club := os.Getenv("IS_CORPORATE_CLUB")
 	message := notify.GetMessage()
 	message = strings.ReplaceAll(message, "```html", "")
@@ -54,6 +55,13 @@ func generateMessageBody(club_number string, club_name string) string {
 	message = strings.ReplaceAll(message, "```", "")
 	return fmt.Sprintf(`<!DOCTYPE html>
 >>>>>>> beab412 (Changes for html email format and updates (#2))
+=======
+	is_corporate_club := os.Getenv("IS_CORPORATE_CLUB")
+	message := notify.GetMessage()
+	message = strings.ReplaceAll(message, "```html", "")
+	message = strings.ReplaceAll(message, "```", "")
+	message_body := fmt.Sprintf(`<!DOCTYPE html>
+>>>>>>> bfb524b (Changes for corporate club terms and improved testing (#3))
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,12 +83,18 @@ Best Regards,<br/>
 </html>
 `, club_name, message, club_number)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bfb524b (Changes for corporate club terms and improved testing (#3))
 	fmt.Printf("Is corporate club? %s\n", is_corporate_club)
 	if is_corporate_club != "" {
 		message_body = notify.ReplaceWithCorpTerms(message_body)
 	}
 
 	return message_body
+<<<<<<< HEAD
 =======
 >>>>>>> beab412 (Changes for html email format and updates (#2))
+=======
+>>>>>>> bfb524b (Changes for corporate club terms and improved testing (#3))
 }
