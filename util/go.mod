@@ -1,8 +1,11 @@
 module github.com/newhorizonsarizona/tmi-status-checker/util
 
 go 1.24.0
+<<<<<<< HEAD
 
 replace github.com/d2tm/tmi-status-checker/util/notify => ./notify
+=======
+>>>>>>> beab412 (Changes for html email format and updates (#2))
 
 require (
 	github.com/sashabaranov/go-openai v1.41.2

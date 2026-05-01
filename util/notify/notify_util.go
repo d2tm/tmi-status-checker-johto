@@ -162,6 +162,7 @@ func GetMessage() string {
 
 	question := util.QuestionBank[int(currentTime.Month())] + string(yaml)
 	return util.Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
+<<<<<<< HEAD
 }
 
 func ReplaceWithCorpTerms(message_body string) string {
@@ -181,4 +182,6 @@ func caseInsensitiveReplacer(message string, toReplace string, replaceWith strin
 	var regx = regexp.MustCompile(pattern)
 	escapedReplaceWith := regexp.QuoteMeta(replaceWith)
 	return regx.ReplaceAllString(message, `${1}`+escapedReplaceWith+`${3}`)
+=======
+>>>>>>> beab412 (Changes for html email format and updates (#2))
 }

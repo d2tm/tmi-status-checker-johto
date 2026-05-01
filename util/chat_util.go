@@ -94,6 +94,22 @@ var QuestionBank = map[int]string{
 		`,
 }
 
+<<<<<<< HEAD
+=======
+func Test() {
+	// Open the YAML file
+	yaml, err := os.ReadFile("./reports/dcp_report.yaml")
+	if err != nil {
+		log.Fatalf("error: %v", err)
+	}
+	currentTime := time.Now()
+
+	question := QuestionBank[int(currentTime.Month())] + string(yaml)
+	answer := Chat(question + os.Getenv("CHAT_OUTPUT_FORMAT_PROMPT"))
+	log.Println("Answer: ", answer)
+}
+
+>>>>>>> beab412 (Changes for html email format and updates (#2))
 func Chat(question string) string {
 	api_key := os.Getenv("OPENAI_API_KEY")
 	if api_key == "" {

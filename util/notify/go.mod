@@ -5,7 +5,11 @@ go 1.24.0
 replace github.com/newhorizonsarizona/tmi-status-checker/util => ../../util
 
 require (
+<<<<<<< HEAD
 	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20260101123914-7ff383e2aa35
+=======
+	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20251201124030-96e3e551883a
+>>>>>>> beab412 (Changes for html email format and updates (#2))
 	gopkg.in/yaml.v3 v3.0.1
 )
 
