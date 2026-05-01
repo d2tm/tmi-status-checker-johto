@@ -94,9 +94,6 @@ var QuestionBank = map[int]string{
 		`,
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 func Test() {
 	// Open the YAML file
 	yaml, err := os.ReadFile("./reports/dcp_report.yaml")
@@ -110,9 +107,6 @@ func Test() {
 	log.Println("Answer: ", answer)
 }
 
->>>>>>> beab412 (Changes for html email format and updates (#2))
-=======
->>>>>>> bfb524b (Changes for corporate club terms and improved testing (#3))
 func Chat(question string) string {
 	api_key := os.Getenv("OPENAI_API_KEY")
 	if api_key == "" {

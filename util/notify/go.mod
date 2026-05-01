@@ -5,19 +5,7 @@ go 1.25.0
 replace github.com/newhorizonsarizona/tmi-status-checker/util => ../../util
 
 require (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20260101123914-7ff383e2aa35
-=======
-	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20251201124030-96e3e551883a
->>>>>>> beab412 (Changes for html email format and updates (#2))
-=======
-	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20260101123914-7ff383e2aa35
->>>>>>> bfb524b (Changes for corporate club terms and improved testing (#3))
-=======
 	github.com/newhorizonsarizona/tmi-status-checker/util v0.0.0-20260401131909-8a64e43d824a
->>>>>>> c9f259d (Fixes for CI build timeout, go modules and npm package update)
 	gopkg.in/yaml.v3 v3.0.1
 )
 
